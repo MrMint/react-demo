@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { MessageList } from './MessageList';
 
 export class Chat extends Component {
+  static propTypes = {
+    onSend: React.PropTypes.func.isRequired,
+    messages: React.PropTypes.array,
+  };
+
   handleSendWrapper = () => {
     this.props.onSend(this.refs.messageInput.value);
   };

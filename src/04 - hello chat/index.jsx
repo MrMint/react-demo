@@ -8,12 +8,10 @@ const messages = [
 ];
 
 class App extends Component {
-  initialState = () => {
-    return { messages };
-  };
+  initialState = () => messages;
 
   handleSend = (message) => {
-    this.setState({messages: messages.push(message)});
+    this.setState({ messages: messages.push(message) });
   };
 
   render() {
@@ -22,8 +20,6 @@ class App extends Component {
     );
   }
 }
-
-
 
 render(
   <App />,
