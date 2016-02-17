@@ -10,3 +10,5 @@ export class HelloJsx extends Component {
 }
 
 render(<HelloJsx />, document.getElementById('root'));
+
+// Babel compiles the xml syntax down to javascript function calls

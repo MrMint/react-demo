@@ -14,4 +14,7 @@ export class HelloProps extends Component {
   }
 }
 
-render(<HelloProps text={'Hello props!'}/>, document.getElementById('root'));
+render(
+  <HelloProps text={'Hello props!'}/>,
+  document.getElementById('root')
+);

@@ -17,4 +17,7 @@ export class HelloComposition extends Component {
   }
 }
 
-render(<HelloComposition />, document.getElementById('root'));
+render(
+  <HelloComposition />,
+  document.getElementById('root')
+);
