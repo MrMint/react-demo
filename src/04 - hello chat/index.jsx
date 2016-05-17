@@ -2,19 +2,24 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Chat } from './Chat';
 
-const messages = [
-  'test message 1',
-  'test message 2',
-];
-
 class App extends Component {
-  initialState = () => messages;
+  constructor(props){
+    super(props);
+    this.state = {
+      messages: [
+        'test message 1',
+        'test message 2',
+      ]
+    };
+  }
 
   handleSend = (message) => {
-    this.setState({ messages: messages.push(message) });
+    const { messages } = this.state;
+    this.setState({ messages: [...messages, message] });
   };
 
   render() {
+    const { messages } = this.state;
     return (
       <Chat messages={messages} onSend={this.handleSend} />
     );

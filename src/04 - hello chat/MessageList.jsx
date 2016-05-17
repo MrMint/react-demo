@@ -3,7 +3,7 @@ import { Message as MessageListItem } from './Message';
 
 export class MessageList extends Component {
   static propTypes = {
-    messages: React.PropTypes.array,
+    messages: React.PropTypes.array.isRequired,
   };
 
   render() {

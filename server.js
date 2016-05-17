@@ -33,6 +33,10 @@ app.get('/04', function(req, res) {
   res.sendFile(path.join(__dirname, 'src/04 - hello chat/index.html'));
 });
 
+app.get('/06', function(req, res) {
+  res.sendFile(path.join(__dirname, 'src/06 - hello state/index.html'));
+});
+
 app.listen(3000, 'localhost', function(err) {
   if (err) {
     console.log(err);

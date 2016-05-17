@@ -9,6 +9,7 @@ module.exports = {
     '02': ['./src/02 - hello props/index.jsx', 'webpack-hot-middleware/client'] ,
     '03': ['./src/03 - hello composition/index.jsx', 'webpack-hot-middleware/client'] ,
     '04': ['./src/04 - hello chat/index.jsx', 'webpack-hot-middleware/client'] ,
+    '06': ['./src/06 - hello state/index.jsx', 'webpack-hot-middleware/client'] ,
   },
   output: {
     path: path.join(__dirname, 'dist'),
